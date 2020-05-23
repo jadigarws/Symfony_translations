@@ -1,4 +1,7 @@
-Hello: Hola
-This friendly message is coming from: Este mensaje amistoso viene de
-Your controller at: Tu controlador es
-Your template at: Tu plantilla es
+Hello: 'Hola'
+Hello %name%: 'Hola %name%'
+Wellcome %name%: 'Bienvenido %name%'
+This friendly message is coming from: 'Este mensaje amistoso viene de'
+Your controller at: 'Tu controlador es'
+Your template at: 'Tu plantilla es'
+'{0} There are no apples. | {1} There is an apple | ]1,Inf[ There are %count% apples': '{0} No hay manzanas. | {1} Hay una manzana | ]1,Inf[ Hay %count% manzanas'

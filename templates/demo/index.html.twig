@@ -9,7 +9,13 @@
 </style>
 <div class="example-wrapper">
 <h1>{% trans %}Hello {% endtrans %} {{ controller_name }}! ✅</h1>
+    <h1>{% trans with {'%name%': name} %}Wellcome %name% {% endtrans %}</h1>
+    {% transchoice count %}
+        {0} There are no apples. | {1} There is an apple | ]1,Inf[ There are %count% apples
+    {%  endtranschoice %}
+    <hr>
 {% trans %}This friendly message is coming from{% endtrans %}:
+
 <ul>
 <li>{% trans %}Your controller at {% endtrans %}<code><a href="{{
 'src/Controller/DemoController.php'|file_link(0)
